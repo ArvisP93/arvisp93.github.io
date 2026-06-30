@@ -63,8 +63,17 @@ h3 {
 
 }
 
+p {
+  font-size: 12px;
+}
+
 a {
+  font-size: 12px;
   color: rgb(128, 192, 255);
+}
+
+a:hover {
+  color: rgb(175, 215, 255);
 }
 
 .project {
@@ -76,16 +85,21 @@ a {
     /* margin: 10px 0px; */
 }
 
-.project-info {
+.project__info {
     flex: 1;
 }
 
-.project-image {
+.project__image {
+    border: 1px solid rgba(255, 255, 255, 0);
     background-size: cover;
     background-position: center;
     aspect-ratio: 2 / 1;
     width: 50%;
     cursor: pointer;
+}
+
+.project__image:hover {
+    border: 1px solid white;
 }
 
 
@@ -104,7 +118,7 @@ a {
     flex-direction: column;
   }
 
-  .project-image {
+  .project__image {
     width: 100%;
   }
 
