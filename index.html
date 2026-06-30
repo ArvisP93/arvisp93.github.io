@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blank Page</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blank Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
 
-  <script src="script.js"></script>
-</body>
+    <div class="content">
+      <h1>Arvis Puķītis projects</h1>
+
+      <div class="project">
+        <div class="project-info">
+          <h2>Online card game "Durak"</h2>
+          <h3>React TypeScript, Convex</h3>
+          <p>
+            Popular Eastern European card game, 
+            features online lobbies for up to 6 players, leaderboards and achievements. Currently in active development.
+          </p>
+        </div>
+        <div class="project-image" style="background-image: url('durak.png');" onclick="showImage('durak.png')"></div>
+      </div>
+
+      <div class="project">
+        <div class="project-info">
+          <h2>3D mobile puzzle game prototype</h2>
+          <h3>Unity</h3>
+          <p>
+            Goal of this game is to push boxes in correct order and directions so  
+            it’s possible for player to reach the end of the level. Player can only  
+            push one box at the same time. Both player and boxes are affected by  
+            gravity. Movement happens gradually between invisible grid points. 
+          </p>
+        </div>
+        <div class="project-image" style="background-image: url('puzzle.png');" onclick="showImage('puzzle.png')"></div>
+      </div>
+
+      <div class="project">
+        <div class="project-info">
+          <h2>Platformer game prototype</h2>
+          <h3>Slick2D, Java</h3>
+          <p>
+            Goal of this game is to reach end of the level while avoiding placed  
+            obstacles. Player is affected by gravity, can move left and right and also  
+            jump. 
+            Levels of this game are built using a tile map. There is a level editor,  
+            which allows to easily build levels and save them in text files. 
+          </p>
+          <a href="https://github.com/ArvisP93/GameTest">
+            https://github.com/ArvisP93/GameTest
+          </a>
+        </div>
+        <div class="project-image" style="background-image: url('platformer.png');" onclick="showImage('platformer.png')"></div>
+      </div>
+
+      <div class="project">
+        <div class="project-info">
+          <h2>"Worms" type game prototype</h2>
+          <h3>Slick2D, Java</h3>
+          <p>
+            Turn-based game which has functionality for player to move around the level, jump, shoot rockets and deal damage to others. 
+            Game level is loaded from a picture and mask and can be completely destroyed using the given weapon. 
+            Both player and rockets are affected by gravity. Movement is programmed using pixel detection. 
+          </p>
+          <a href="https://github.com/ArvisP93/SpacePickles">
+            https://github.com/ArvisP93/SpacePickles
+          </a>
+        </div>
+        <div class="project-image" style="background-image: url('worms_clone.png');" onclick="showImage('worms_clone.png')"></div>
+      </div>
+
+      
+    </div>
+
+    <div id="overlay" onclick="hideImage()">
+      <img id="preview" alt="">
+    </div>
+  </body>
 </html>
